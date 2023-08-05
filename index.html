@@ -19,20 +19,20 @@
                 <div class="bg-sky-600">
                 <h3 class='text-center text-4xl m-4'>income</h3>
 
-               <div class="text-center pb-6">
-                <span>income:</span>
-                <input type="text"id='income-input'>
-
-                <h3 class='text-center text-4xl m-4'>Expenses</h3>
-                <span>food:</span>
-                <input type="text" class="m-2"id='food-input'>
-                <br> 
-                <span>rent:</span>
-                <input type="text"class='m-2'id='rent-input'> 
-                <br>
-                <span>clothes:</span>
-                <input type="text"id='clothes-input'> 
-                <br>
+               <div class="text-center pb-6" >
+                <div id='input-container'><span>income:</span>
+                    <input type="text"id='income-input'>
+    
+                    <h3 class='text-center text-4xl m-4'>Expenses</h3>
+                    <span>food:</span>
+                    <input type="text" class="m-2"id='food-input'>
+                    <br> 
+                    <span>rent:</span>
+                    <input type="text"class='m-2'id='rent-input'> 
+                    <br>
+                    <span>clothes:</span>
+                    <input type="text"id='clothes-input'> 
+                    <br></div>
                 <button class="bg-yellow-500 m-2 px-2 py-2 rounded " id="calculate-button">calculate</button>
                 <h2>Total expenses :<span id ="total-expenses">00</span></h2>
                 <h2>balance :<span id ='balance'>
@@ -40,7 +40,7 @@
                 save:<input
                 type="number"
                 class="bg-light p-2 m-2 w-50"
-                id="save"
+                id="saving-input"
               /> <span class="ml-4">%</span> <button class="bg-yellow-500 m-2 px-2 py-2 rounded "id='save-button'>save</button>
                 <h2 class="m-2">Saving amount: <span id ='saving-amount'></span></h2>
                 <h2> remaining balance:<span id ='remaining-balance'></span>
@@ -53,7 +53,9 @@
         </section>
     </header>
   
+    <script src="js/utilities.js"></script>
     <script src="js/calculate.js"></script>
+    <script src="js/saving.js"></script>
    
 </body>
 </html>
