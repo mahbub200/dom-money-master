@@ -18,10 +18,20 @@ function inputFieldSetByID(id) {
       totalExpenses.innerText=value;
   
   }
-  function errorHandlng(){
-    let inputContainer =document.getElementById('input-container');
+  function errorHandlng(id,incomeInputField,expense){
+    let inputContainer =document.getElementById(id);
     let p=document.createElement('p');
-    p.innerText=`field input cannot be a string or a negative number`
+    if(incomeInputField<expense){
+        p.innerText=`expense cannot be greater  than income`
+
+    }
+    
+    
+    else{
+
+        p.innerText=`field input cannot be a string or a negative number`
+    }
+    
     inputContainer.appendChild(p);
     p.style.color='red'
   }
