@@ -1,7 +1,4 @@
-let income='income';
-let food='food';
-let rent='rent'
-let clothes='clothes'
+
 document
   .getElementById("calculate-button")
   .addEventListener("click", function () {
@@ -17,11 +14,11 @@ document
     let balance=incomeInputField-expense;
     elementSetTextById('balance',balance);
 
-    if(incomeInputField!=NaN ||foodInputField!=NaN|| rentInputField!=NaN||clothesInputField!=NaN){
-      errorHandlng()
+    if(isNaN(incomeInputField) ||isNaN(foodInputField)|| isNaN(rentInputField)||isNaN(clothesInputField)){
+      errorHandlng();
     }
     if(incomeInputField<0||foodInputField<0||rentInputField<0||clothesInputField<0){
-errorHandlng
+errorHandlng();
     }
   
 
