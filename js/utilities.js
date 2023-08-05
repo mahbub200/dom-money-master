@@ -5,6 +5,14 @@ function inputFieldSetByID(id) {
     fieldInput.value=''
     return fieldValue;
   }
+  function elementTextField(id){
+
+    let textElement = document.getElementById(id);
+    let textElementString = textElement.innerText;
+    let textElementValue = Number(textElementString);
+    return textElementValue
+
+  }
   function elementSetTextById(id,value){
       const totalExpenses=document.getElementById(id);
       totalExpenses.innerText=value;
